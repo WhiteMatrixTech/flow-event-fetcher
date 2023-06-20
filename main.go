@@ -179,5 +179,5 @@ func main() {
 	router.GET("/queryLatestBlockHeight", queryLatestBlockHeight)
 
 	log.Info("Starting server...")
-	router.Run(":" + *port)
+	_ = router.Run(":" + *port)
 }
