@@ -1,4 +1,4 @@
-FROM golang:latest AS buildContainer
+FROM golang:1.18-alpine AS buildContainer
 WORKDIR /go/src/app
 
 COPY . .
